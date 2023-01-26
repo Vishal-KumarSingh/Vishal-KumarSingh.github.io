@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/basic.css" rel="stylesheet">
+
+    <title>Project RICWD</title>
+</head>
+<input id="submitbtn" type="button" name="submit" value="Login" style="display:none;" />
+
+<body onclick="closeDrawer(event)" onresize="adjuster()">
+    <div id="headsection" class="headsection align-items-center">
+        <div class="nav">
+            <div class="nav_header">Simple Site</div>
+            <div class="right">
+                <div id="menu_btn" class="navbutton only-small-screen " onclick="openDrawer(event,'')">&#9776;</div>
+                <img class="language" src="./image/globe.png" onclick="openDrawer(event,'2')">
+            </div>
+            <div id="nav_tray" class="nav-tray default">
+                <ul class="nav-links maindrawer">
+                    <li class="nav-item">Try it for free?</li>
+                    <li class="nav-item">Customer Service</li>
+                    <li class="nav-item">Features</li>
+                    <li class="nav-item">Themes</li>
+                    <li class=" login_btn nav-item" onclick="login()">LOG IN</li>
+                </ul>
+            </div>
+            <div id="nav_tray2" class="nav-tray closed">
+                <ul class="nav-links">
+                    <li class="nav-item">English</li>
+                    <li class="nav-item">Hindi</li>
+                    <li class="nav-item">Bengali</li>
+                    <li class="nav-item">Malayalam</li>
+                    <li class="nav-item">Odia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body ">
+            <h1>Create Your Own Website in <b> three Simple Steps </b></h1><br><br>
+            <h3><b>-30-day free trial! -</b></h3><br>
+            <div class="design_btn">Click Here</div>
+        </div>
+    </div>
+
+
+    <div class="p-4 m-4">
+        <div class="align-items-center">
+            <h1 class="underlined-header" style="margin: 0px auto;">THEMES</h1>
+        </div>
+
+        <div class="themes_para p-4 m-5 text-center">
+            Pick a theme that fits the kind of website YOU want to make. We’ve made sure there are plenty of
+            beautiful templates to choose from. Really, there’s something for everyone! Each template can be
+            completely customized, so let your imagination run free.
+        </div>
+    </div>
+
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-50" src="image/1.png" alt="First slide" style="margin:0px auto">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50" src="image/2.png" alt="Second slide" style="margin:0px auto">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
+            style="outline:none;">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background:black;">&larr;</span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
+            style="outline:none;">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background:black;">
+                &rarr;</span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+    <div class="align-items-center p-4 m-5">
+        <h1 class="underlined-header" style="margin: 0px auto;">Why SimpleSite</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="container-fluid" src="image/why_simplesite.png" alt="Second slide" style="margin:0px auto">
+        </div>
+        <div class="col-lg-6 text-center" style="padding:6rem ">
+            At SimpleSite we believe it's important to offer people of all technological levels the ability to tap
+            into
+            the web's endless potential. Our solution isn't made for professional web developers; it’s made for
+            anybody with a desire to have their own little corner of the internet. No designers, developers, or
+            webmasters necessary.
+
+            Best of all, you can have your own website online within minutes!
+
+            Simply choose the type of website you'd like to have, customize its look with our guided design wizard,
+            then fill in the information needed to make it yours. Make your own website today!
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="align-items-center p-4 m-5">
+        <h1 class="underlined-header" style="margin: 0px auto;"> MOBILE READY</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-6 text-center" style="padding:6rem ">
+            EDIT ON-THE-GO
+            What makes SimpleSite stand out is that we are the only website builder that fully supports mobile-friendly
+            editing in a mobile browser - no special app needed! This means you can view and edit your website on your
+            smartphone.
+
+            SimpleSite automatically gives you a website that looks stunning on both desktop and mobile. On top of that
+            we
+            also have a full mobile-optimized interface that gives you the freedom to access and edit everything on
+            mobile
+            devices. Edit the design and content of your website from the comfort of your couch or on the go - it’s all
+            possible with SimpleSite’s mobile website editor.
+        </div>
+        <div class="col-lg-6">
+            <img class="container-fluid" src="image/mobile_ready.png" alt="Second slide" style="margin:0px auto">
+        </div>
+    </div>
+
+
+
+
+    <div class="align-items-center p-2 m-2">
+        <h1 class="underlined-header" style="margin: 0px auto;">FEATURES</h1>
+    </div>
+    <div class="themes_para p-4 m-5 text-center">
+
+        Check out all the great features that are included on your website. SimpleSite provides everything you need to
+        create a beautiful and professional website.
+
+    </div>
+
+    <div class="row">
+        <div class="col-xl-3 p-d text-center">
+            <img class="container-fluid" style="max-width:200px; min-width: 200px; height:100px;"
+                src="image/all_devices.png" alt="Second slide" style="margin:0px auto">
+            <br> <br> <br>
+            <b> Mobile-optimized</b><br>
+
+            All SimpleSite websites are 100% mobile-friendly, ensuring your website visitors have a great mobile
+            experience
+            when they visit your website.
+        </div>
+        <div class="col-xl-3 p-d  text-center">
+            <img class="container-fluid" style="max-width:200px; min-width: 200px;  height:100px;"
+                src="image/design.png" alt="Second slide" style="margin:0px auto">
+            <br> <br> <br>
+            <b>Stunning themes</b><br>
+
+            A SimpleSite website lets you choose between unique designs. Choose between our themes or go with a
+            ready-made
+            design.
+        </div>
+        <div class="col-xl-3 p-d text-center">
+            <img class="container-fluid" style="max-width:200px; min-width: 200px;  height:100px;"
+                src="image/guided.png" alt="Second slide" style="margin:0px auto">
+            <br> <br> <br>
+            <b>Guided Step by Step</b><br>
+
+            We will guide you every step of the way, empowering you to grow your business online. Whether you want to
+            open a
+            restaurant, or start a daycare, we have the resources for you!
+        </div>
+        <div class="col-xl-3 p-d text-center">
+            <img class="container-fluid" style="max-width:200px; min-width: 200px;  height:100px;"
+                src="image/customer_service.png" alt="Second slide" style="margin:0px auto">
+            <br> <br> <br>
+            <b>Customer support</b><br>
+
+            Our customer service is ready to help you when you have questions. You can also check out our frequently
+            asked
+            questions in our customer service section.
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer row bg-dark text-white p-5">
+        <div class="col-lg-3">
+            <div class="align-items-center p-2 m-2">
+                <h3 class="underlined-header">SIMPLESITE</h3>
+            </div>
+            every vein of our company. Our ideals are not to attain perfection, but rather to attain pleasure. Using our
+            product should feel enjoyable - like playing a game - it should be easy, exciting and uplifting. Something
+            to
+            try and subsequently to learn from. This is the same experience our employees have working for us.
+
+
+        </div>
+        <div class="col-lg-3">
+            <div class="align-items-center p-2 m-2">
+                <h3 class="underlined-header">PRODUCT</h3>
+            </div>
+            <ul>
+                <li> Features </li>
+                <li> Themes</li>
+                <li>Gift Certificate</li>
+                <li> Pricing</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <div class="align-items-center p-2 m-2">
+                <h3 class="underlined-header">COMPANY</h3>
+            </div>
+            <ul>
+                <li> Terms of use </li>
+                <li> Privacy Policy</li>
+                <li> Cookie Policy</li>
+            </ul>
+
+
+
+        </div>
+        <div class="col-lg-3">
+            <div class="align-items-center p-2 m-2">
+                <h3 class="underlined-header"> COMMUNITY</h3>
+            </div>
+            <ul>
+                <li> Customer service</li>
+                <li> FAQ</li>
+
+            </ul>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+
+
+
+<script src="./js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
